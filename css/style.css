@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family= Inter & display = swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav h1{
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: 5px;
+    
+}
+main{
+    font-family: 'Inter', sans-serif;
+}
+
+  .logoEspanha{
+    margin-left: 20px;
+    width: 30px;
+    height: 35px;
+    
+  }
+  .logoEtec{
+    margin-top: 3px;
+    margin-left: 25px;
+    width: 55px;
+    height: 35px;
+  }
+.barraBranca{
+    position: fixed;
+    display: flex;
+    font-family: system-ui, -apple-system, Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+}
+.menupreto{
+    
+    right: 0;
+    left: 0;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000000;
+    min-height: 30px;
+    max-height: 80px;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+.nav-list li {
+  display: inline-block;
+    margin: 50px;
+}
+.nav-list li a{
+    padding: 30px;
+    display: block;
+    z-index: 2;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    position: relative;
+    cursor: default;
+}
+.nav-list li a::before{
+    content: "";
+    min-width:80px ;
+    min-height: 57px;
+    max-height: 91px;
+    background-image: url(../imagems/bandeira-espanha.png);
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    transition: transform 300ms ease;
+    transform-origin: right;
+    transform: scaleX(0);
+
+}
+.nav-list li a:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.nav-list li a:hover{
+    color: rgb(0, 0, 0);
+}
+
+footer{
+bottom: 0;
+width: 100%;
+position: relative;
+background-color: #000000;
+padding: 50px 0;
+
+}
+.container-footer{
+    max-width: 1400px;
+    padding: 0 4%;
+    margin: auto;
+}
+.row-footer{
+    
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-col{
+    margin-left: 100px;
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+ position: relative;
+ font-size: 20px;
+ color: rgb(221, 185, 65);
+}
+.footer-col h5{
+    position: relative;
+    font-size: 20px;
+    color: rgb(221, 185, 65);
+}
+.footer-col li{
+    list-style: none;
+    color: rgb(255, 255, 255);
+}
+.footer-col ul li{
+    font-size: 15px;
+ margin: 10px;   
+}
+.footer-col ul li a{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+ color: rgb(221, 185, 65);
+ padding-left: 10px;
+}
+#equipe{
+    margin-left: 100px;
+}
+.logoInsta{
+    
+    position: relative;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    display: block;
+}
+/*CSS da Pagina Tipos de Energia*/
+.secaoTipos1{
+    align-items: center;
+    gap:2rem;
+    padding: 2rem 20% 2rem;
+}
+.secaoTipos1 h1{
+    text-align: center;
+    font-size: 40pt;
+    margin-bottom: 30px;
+}
+.secaoTipos1 p{
+    display: flex;
+    font-size: 15pt;
+    line-height: 23px;
+    text-align: justify;
+    padding-bottom: 0.5rem;
+}
+.secaoTipos1 img{
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    border-radius: 10pt;
+    margin-bottom: 2rem;
+    align-items: center;
+    margin-right:20px ;
+}
+.secaoTipos2{
+    align-items: center;
+    gap:2rem;
+    padding: 2rem 20% 2rem;
+}
+.secaoTipos2 h1{
+    text-align: center;
+    font-size: 40pt;
+    margin-bottom: 30px;
+}
+.secaoTipos2 li{
+    font-size: 15pt;
+    line-height: 25pt;
+}
+.secaoTipos2 img{
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    border-radius: 10pt;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+.secaoTipos3 {
+    align-items: center;
+    gap:2rem;
+    padding: 2rem 9% 2rem;
+}
+.secaoTipos3 h1{
+    text-align: center;
+    font-size: 40pt;
+    margin-bottom: 30px;
+}
+.secaoTipos3 p{
+    font-size: 15pt;
+    line-height: 23px;
+    text-align: justify;
+    padding-bottom: 0.5rem;
+}
+/*CSS da Pagina Energia Fotovoltaica*/
+.secaoFotovoltaica1{
+    align-items: center;
+    gap:2rem;
+    padding: 2rem 20% 2rem;
+}
+.secaoFotovoltaica1 h1{
+    text-align: center;
+    font-size: 40pt;
+    margin-bottom: 30px;
+}
+.secaoFotovoltaica1 p{
+    
+    display: flex;
+    font-size: 15pt;
+    line-height: 23px;
+    text-align: justify;
+    padding-bottom: 0.5rem;
+}
+.secaoFotovoltaica1 img{
+    width: 100%;
+    max-width: 250px;
+    display: flex;
+    border-radius: 10pt;
+    margin-bottom: 2rem;
+    align-items: center;
+    margin-left: 20px;
+}
+#imgCfunciona{
+    width: 100%;
+    max-width: 700px;
+    height: 400px;
+    display: flex;
+    border-radius: 10pt;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    align-items: center;
+    margin-left: 20px;
+}
+.secaoFotovoltaica2{
+    align-items: center;
+    gap:2rem;
+    padding: 2rem 9% 2rem;
+}
+.secaoFotovoltaica2 h1{
+    text-align: center;
+    font-size: 40pt;
+    margin-bottom: 30px;
+}
+.secaoFotovoltaica2 p{
+    height: 280px;
+    display: flex;
+    font-size: 15pt;
+    line-height: 23px;
+    text-align: center;
+     width: 650pt;
+    padding-bottom: 0.5rem;
+    text-align: justify;
+    margin-top: 20px;
+}
+.secaoFotovoltaica2 img{
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    border-radius: 10pt;
+   
+    margin-bottom: 13px;
+    margin-right: 20px;
+    
+    align-items: center;
+    margin-left: 20px;
+}
+.secaoFotovoltaica3{
+    align-items: center;
+    gap:2rem;
+    padding: 2rem 9% 2rem;
+}
+.secaoFotovoltaica3 p{
+    height: 280px;
+    display: flex;
+    font-size: 15pt;
+    line-height: 23px;
+    text-align: justify;
+    padding-bottom: 0.5rem;
+    margin-top: -30px;
+}
+/*CSS da pagina energia acessivel*/
+.secaoAcessivel{
+    align-items: center;
+    gap:2rem;
+    padding: 2rem 20% 2rem;
+}
+.secaoAcessivel h1{
+    text-align: center;
+    font-size: 40pt;
+    margin-bottom: 15px;
+}
+.secaoAcessivel p{
+    margin-top: 15px;
+    text-indent: 15px;
+    margin-bottom: 10px;
+    font-size: 15pt;
+    line-height: 23px;
+    text-align: justify;
+    padding-bottom: 0.5rem;
+}
+.secaoAcessivel img{
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    border-radius: 10pt;
+    margin: 20px;
+    align-items: center;
+    
+}
+/*CSS do home*/
+.secaohome1{
+    align-items: center;
+    gap:2rem;
+    padding: 2rem 20% 2rem;   
+}
+.secaohome1 h1{
+    text-align: center;
+    font-size: 40pt;
+    margin-bottom: 15px;
+}
+.secaohome1 p{
+    margin-top: 15px;
+    text-indent: 15px;
+    
+    font-size: 15pt;
+    line-height: 23px;
+    text-align: justify;
+    
+}
+.secaohome1 img{
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    border-radius: 10pt;
+    align-items: center;
+    
+}
+.secaohome2{
+    align-items: center;
+    gap:2rem;
+    padding: 2rem 20% 2rem;
+}
+.secaohome2 p{
+    display: flex;
+    text-indent: 15px;
+    
+    font-size: 15pt;
+    line-height: 23px;
+    text-align: justify;
+    padding-bottom: 0.5rem;
+    letter-spacing: normal;
+}
+.secaohome2 img{
+    margin-left: 14px;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    border-radius: 10pt;
+    align-items: center;
+}
+.secaohome3{
+    align-items: center;
+    gap:2rem;
+    padding: 2rem 20% 2rem;
+}
+.secaohome3 p{
+    
+    text-indent: 15px;
+    margin-bottom: 10px;
+    font-size: 15pt;
+    line-height: 23px;
+    text-align: justify;
+    padding-bottom: 0.5rem;
+}
